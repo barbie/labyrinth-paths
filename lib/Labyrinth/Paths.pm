@@ -90,18 +90,22 @@ sub load {
 
 sub parse {
     my $self = shift;
+
     my $path = $ENV{SCRIPT_URL} || $ENV{SCRIPT_NAME};
+    return  unless($path);
 
     for my $data (@{$self->{data}}) {
         if($path =~ /$data->{path}/) {
-            my @vars = ($1,$2,$3,$4,$5,$6,$7,$8,$9);
-            while($data->{variables} && @{$data->{variables} && @vars}) {
-                my $name = shift $data->{variables};
-                $cgiparams{$name} = shift @vars;
+            my @vars1 = ($1,$2,$3,$4,$5,$6,$7,$8,$9);
+            my @vars2 = @{$data->{variables}};
+
+            while(@vars1 && @vars2) {
+                my $name = shift @vars2;
+                $cgiparams{$name} = shift @vars1;
             }
 
-            $cgiparams{$_} = $self->{cgiparams}{$_} for(keys %{$self->{cgiparams}});
-            $settings{$_}  = $self->{settings}{$_}  for(keys %{$self->{settings}});
+            $cgiparams{$_} = $data->{cgiparams}{$_} for(keys %{$data->{cgiparams}});
+            $settings{$_}  = $data->{settings}{$_}  for(keys %{$data->{settings}});
 
             return;
         }
