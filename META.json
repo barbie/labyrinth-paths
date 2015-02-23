@@ -1,6 +1,6 @@
 {
     "name": "Labyrinth-Paths",
-    "version": "0.01",
+    "version": "0.02",
     "abstract": "Paths handler for Labyrinth",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
@@ -46,7 +46,7 @@
     "provides": {
         "Labyrinth::Paths": {
             "file": "lib/Labyrinth/Paths.pm",
-            "version": "0.01"
+            "version": "0.02"
         }
     },
     "no_index": {

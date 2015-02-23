@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                     Labyrinth-Paths
-version:                  0.01
+version:                  0.02
 abstract:                 Paths handler for Labyrinth
 author:
   - Barbie <barbie@cpan.org>
@@ -26,7 +26,7 @@ build_requires:
 provides:
   Labyrinth::Paths:
     file:     lib/Labyrinth/Paths.pm
-    version:  0.01
+    version:  0.02
 
 no_index:
   directory:
