@@ -16,6 +16,14 @@ use Labyrinth::Variables;
 # -------------------------------------
 # The Subs
 
+=head1 NAME
+
+Labyrinth::Paths - CGI path translation for Labyrinth
+
+=head1 DESCRIPTION
+
+Allow Labyrinth to translate CGI paths into internal settings and parameters.
+
 =head1 FUNCTIONS
 
 =head2 Constructor

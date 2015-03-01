@@ -10,7 +10,7 @@ WriteMakefile(
     AUTHOR              => 'Barbie <barbie@cpan.org>',
     NAME                => 'Labyrinth::Paths',
     VERSION_FROM        => 'lib/Labyrinth/Paths.pm',
-    ABSTRACT	        => 'Paths handler for Labyrinth',
+    ABSTRACT	        => 'CGI path translation for Labyrinth',
     NO_META             => 1,
     PREREQ_PM           => {
 

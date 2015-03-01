@@ -1,7 +1,7 @@
 {
     "name": "Labyrinth-Paths",
     "version": "0.02",
-    "abstract": "Paths handler for Labyrinth",
+    "abstract": "CGI path translation for Labyrinth",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
     ],
